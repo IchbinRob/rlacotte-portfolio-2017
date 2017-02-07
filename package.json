@@ -1,28 +1,34 @@
 {
-  "name": "w2-p2018-00-base",
-  "version": "1.0.0",
-  "description": "This is a basic repository to start the HETIC Mobile First course.",
+  "name": "rlacotte-portfolio-2017",
+  "version": "0.0.1",
+  "description": "Portfolio de robinson lacotte",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.18.2",
+    "autoprefixer": "latest",
+    "browser-sync": "latest",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.3.2",
-    "gulp-imagemin": "^3.1.1",
-    "gulp-modernizr": "^1.0.0-alpha",
-    "gulp-sass": "^2.3.2"
+    "gulp-clean-css": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-modernizr": "latest",
+    "gulp-postcss": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uncss": "latest",
+    "postcss-pxtorem": "latest",
+    "precss": "latest"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bcalou/w2-p2018-00-base.git"
+    "url": "git+https://github.com/IchbinRob/rlacotte-portfolio-2017.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bcalou/w2-p2018-00-base/issues"
+    "url": "https://github.com/IchbinRob/rlacotte-portfolio-2017/issues"
   },
-  "homepage": "https://github.com/bcalou/w2-p2018-00-base#readme"
+  "homepage": "https://github.com/IchbinRob/rlacotte-portfolio-2017#readme"
 }
