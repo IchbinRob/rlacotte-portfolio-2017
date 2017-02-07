@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main__news {
+
+  img {
+    width: 100%;
+  }
+}
+
+.main__testsAndTop {
+  display: flex;
+
+}
+
+.main__tests, .main__tops {
+  flex: 1 0 0;
+
+  img {
+    width: 100%;
+
+  }
+}
