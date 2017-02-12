@@ -1,25 +1,21 @@
-.main {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.main__news {
-
-  img {
-    width: 100%;
-  }
-}
-
-.main__testsAndTop {
-  display: flex;
-
-}
-
-.main__tests, .main__tops {
-  flex: 1 0 0;
-
-  img {
-    width: 100%;
-
-  }
-}
+// .main {
+//   display: none;
+//   flex : 15 1 auto;
+//   margin-bottom: 20px;
+//   &.is-active {
+//     display: block;
+//     transition: 1s;
+//   }
+// }
+//
+// .main__about {
+//   opacity: 0;
+//
+//
+//
+//   &.is-active {
+//     opacity: 1;
+//     height: 100%;
+//     background-color: yellow;
+//   }
+// }

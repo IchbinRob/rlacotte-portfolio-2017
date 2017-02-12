@@ -1,6 +1,15 @@
 //Déclaration
 $padding: 20;
 
+/*
+CSS Portfolio Robinson Lacotte
+v0.0.0.0.0.0.0.0.0.0.0.0.0.1 | en dev
+Copyright © 2017 Robinson Lacotte - rafrob5@gmail.com
+This work is free. You can redistribute it and/or modify it under the
+terms of the Do What The Fuck You Want To Public License, Version 2,
+as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
+ */
+
 * {
   box-sizing: border-box;
 }
@@ -11,8 +20,8 @@ a {
 }
 
 html {
-    min-height:100%;
-    position:relative;
+    min-height: 100%;
+    position: relative;
 }
 
 body {
@@ -21,22 +30,15 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  align-content: stretch;
+  flex-direction: column;
+
   margin: 20px;
-  padding: 20px;
-  background-color: #fff;
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  overflow:hidden;
-  z-index:-1;
-}
-
-.main {
-  min-height: 50px;
-}
-
-.cookie {
-  padding-left: 50px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
 }

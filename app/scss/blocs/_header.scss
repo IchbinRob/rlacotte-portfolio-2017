@@ -1,0 +1,39 @@
+.header {
+
+  margin-bottom: 20px;
+  flex: 1 1 auto;
+  height: 0;
+
+  .menu__desktop {
+    display: none;
+  }
+
+  .menu__mobile {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    li {
+      height: 2.5rem;
+      background-color: #fff;
+
+    }
+  }
+
+  @media handheld and (orientation: landscape), (min-width: 700px) and (orientation: landscape), (min-width: 700px) and (orientation: portrait) {
+    .menu__desktop {
+      display: flex;
+    }
+
+    .menu_mobile {
+      display: none;
+    }
+
+    display: -webkit-box;
+  }
+
+  svg polygon {
+    fill: #F5F5F5;
+  }
+}
