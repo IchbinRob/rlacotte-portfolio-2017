@@ -22,6 +22,19 @@ gulp.task('img', function(){
     .pipe(sync.stream());
 });
 
+gulp.task('vendorcss', function(){
+  gulp.src('app/css/*')
+    .pipe(gulp.dest('dist/css/'))
+    .pipe(sync.stream());
+});
+
+gulp.task('font', function(){
+  gulp.src('app/font/*')
+    .pipe(gulp.dest('dist/font'))
+    .pipe(sync.stream());
+});
+
+
 gulp.task('js', function(){
   gulp.src('app/js/*')
     .pipe(gulp.dest('dist/js/'))
@@ -57,7 +70,7 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task('sync', ['html', 'js', 'img','css', 'watch'], function() {
+gulp.task('sync', ['html', 'js', 'img','css' ,'vendorcss', 'font', 'watch'], function() {
     sync.init({
         server: __dirname + '/dist'
     });

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+<!-- Ajouter la compatibilité -webkit-box sur chrome -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Robinson Lacotte | Portfolio</title>
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/icons-ie7.css"><![endif]-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -16,56 +19,78 @@
 
         <a href="#">
           <g>
-            <polygon class="is-active" points="0 0 943.1 0 488.3 392.1 0 392 " data-desktop=""/>
+            <polygon points="0 0 943.1 0 488.3 392.1 0 392" data-origin="0 0 943.1 0 488.3 392.1 0 392" data-section="about"/>
             <!-- <image id="img1" xlink:href="img/pic09.jpg" style="width: 100%;"/> -->
           </g>
         </a>
         <a href="#">
           <g>
-            <polygon points="0 419 457 419 225 618 0 811"/>
+            <polygon points="0 419 457 419 225 618 0 811" data-origin="0 419 457 419 225 618 0 811" data-section="skills"/>
           </g>
         </a>
         <a href="#">
           <g>
-            <polygon points="498.8 417.7 657.5 649.4 793.6 848.3 0 848.3"/>
+            <polygon points="498.8 417.7 657.5 649.4 793.6 848.3 0 848.3" data-origin="498.8 417.7 657.5 649.4 793.6 848.3 0 848.3" data-section="exp"/>
           </g>
         </a>
         <a href="#">
           <g>
-            <polygon points="982.1 0 1268.8 0 1516.2 391.9 528.5 392.1"/>
+            <polygon points="982.1 0 1268.8 0 1516.2 391.9 528.5 392.1" data-origin="982.1 0 1268.8 0 1516.2 391.9 528.5 392.1" data-section="portfolio"/>
           </g>
         </a>
         <a href="#">
           <g>
-            <polygon points="1301.5 0 1732.3 0 1732.3 687 1503.4 321.2 "/>
+            <polygon points="1301.5 0 1732.3 0 1732.3 687 1503.4 321.2 " data-origin="1301.5 0 1732.3 0 1732.3 687 1503.4 321.2 " data-section="about"/>
           </g>
         </a>
         <a href="#">
           <g>
-            <polygon points="1531.6 417.5 1732.3 736.3 1732.3 848.3 867.3 848.3 "/>
+            <polygon points="1531.6 417.5 1732.3 736.3 1732.3 848.3 867.3 848.3 " data-origin="1531.6 417.5 1732.3 736.3 1732.3 848.3 867.3 848.3 " data-section="about"/>
           </g>
         </a>
         <a href="#">
           <g>
-            <polygon points="531.4 418.2 1481.8 418.1 1162.6 624.8 823 848.3"/>
+            <polygon points="531.4 418.2 1481.8 418.1 1162.6 624.8 823 848.3" data-origin="531.4 418.2 1481.8 418.1 1162.6 624.8 823 848.3" data-section="about"/>
           </g>
         </a>
         <use id="front"/>
       </svg>
       <ul class="menu__mobile">
-        <li><a href="#">About</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">About</a></li>
+        <li data-section="about"><a href="#">About</a></li>
+        <li data-section="skills"><a href="#">Skills</a></li>
+        <li data-section="exp"><a href="#">Experiences</a></li>
+        <li data-section="portfolio"><a href="#">Portfolio</a></li>
+        <li data-section="about"><a href="#">Portfolio2</a></li>
+        <li data-section="about"><a href="#">Portfolio3</a></li>
+        <li data-section="about"><a href="#">Portfolio4</a></li>
       </ul>
     </section>
     <section class="main" id="main">
-      <div class="main__about" id="about">
 
+      <div class="main__about" id="about">
+        <p>Robinson Lacotte</p>
+        <p>Etudiant</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
+
+      <div class="main__skills" id="skills">
+        <p>Skills</p>
+        <p>Etudiant</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <div class="main__exp" id="exp">
+        <p>Exp</p>
+        <p>Etudiant</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <div class="main__portfolio" id="portfolio">
+        <p>Portfolio</p>
+        <p>Etudiant</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <a href="#"><i class="close icon-cancel-circled2"></i></a>
     </section>
     <section class="footer">
 
@@ -85,8 +110,12 @@
         <h3 class="footer__copyright"></h3>
     </section>
   </div>
-
-  <script src="js/vendors/dynamics.min.js" charset="utf-8"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.1.1.min.js"
+			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			  crossorigin="anonymous"></script>
+  <script src="js/vendors/dynamics.min.js"></script>
+  <!-- <script src="js/vendors/modernizr.js"></script> -->
   <script src="js/main.js" charset="utf-8"></script>
 </body>
 </html>

@@ -1,21 +1,25 @@
-// .main {
-//   display: none;
-//   flex : 15 1 auto;
-//   margin-bottom: 20px;
-//   &.is-active {
-//     display: block;
-//     transition: 1s;
-//   }
-// }
-//
-// .main__about {
-//   opacity: 0;
-//
-//
-//
-//   &.is-active {
-//     opacity: 1;
-//     height: 100%;
-//     background-color: yellow;
-//   }
-// }
+.main {
+
+  &.is-active {
+    flex: 1 1 auto;
+    margin-bottom: 20px;
+  }
+}
+
+.main__about,
+.main__skills,
+.main__exp,
+.main__portfolio {
+  background-color: _palette(bcg-white);
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+
+  &.is-active {
+    z-index: 1;
+
+  }
+}

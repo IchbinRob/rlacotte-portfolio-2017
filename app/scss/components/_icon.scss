@@ -1,0 +1,10 @@
+.close {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-size: 3rem;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}

@@ -1,27 +1,28 @@
 .header {
-
-  margin-bottom: 20px;
   flex: 1 1 auto;
   height: 0;
+  margin-bottom: 20px;
 
   .menu__desktop {
     display: none;
   }
 
   .menu__mobile {
-    height: 100%;
     display: flex;
     flex-direction: column;
+    height: 100%;
     justify-content: space-around;
 
     li {
-      height: 2.5rem;
-      background-color: #fff;
-
+      background-color: _palette(bcg-white);
+      height: 100%;
+      margin: 10px 0;
     }
   }
 
   @media handheld and (orientation: landscape), (min-width: 700px) and (orientation: landscape), (min-width: 700px) and (orientation: portrait) {
+    display: flex;
+
     .menu__desktop {
       display: flex;
     }
@@ -29,11 +30,9 @@
     .menu__mobile {
       display: none;
     }
-
-    display: -webkit-box;
   }
 
   svg polygon {
-    fill: #F5F5F5;
+    fill: _palette(bcg-white);
   }
 }
