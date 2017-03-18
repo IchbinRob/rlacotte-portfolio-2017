@@ -3,6 +3,24 @@
   height: 0;
   margin-bottom: 20px;
 
+  .menu__desktopTitle {
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-direction: column;
+    // justify-content: space-around;
+    // align-items: center;
+
+    ul:first-child {
+      top: 0;
+
+      li:nth-child(1) a {
+        position: absolute;
+        left: 10px;
+        top: 20px;
+      }
+    }
+  }
+
   .menu__desktop {
     display: none;
   }
