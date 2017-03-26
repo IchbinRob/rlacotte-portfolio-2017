@@ -9,11 +9,13 @@
     "browser-sync": "latest",
     "gulp": "^3.9.1",
     "gulp-clean-css": "latest",
+    "gulp-concat": "^2.6.1",
     "gulp-imagemin": "latest",
     "gulp-modernizr": "latest",
     "gulp-postcss": "latest",
     "gulp-sass": "latest",
     "gulp-sourcemaps": "latest",
+    "gulp-uglify": "^2.1.2",
     "gulp-uncss": "latest",
     "postcss-pxtorem": "latest",
     "precss": "latest"

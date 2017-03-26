@@ -1,11 +1,31 @@
-$font: 'arial';
+$serif: 'Eczar', serif;
+$sans-serif: 'Work Sans', sans-serif;
 
-// h1,
-// h2,
-// h3 {
-//   @include font-face($font, '', bold, italic, .10rem);
-// }
-//
-// a {
-//   @include font-face($font, '', normal, italic, .05rem);
-// }
+.menu__desktopTitle li {
+  font-family: $serif;
+  font-weight: 700;
+}
+
+.footer {
+  font-family: $sans-serif;
+  font-weight: 500;
+}
+
+.typo-serif-regular {
+  font-family: $serif;
+  font-weight: 400;
+}
+
+.typo-serif-bold {
+  font-family: $serif;
+  font-weight: 700;
+}
+
+.typo-sans-light {
+  font-family: $sans-serif;
+  font-weight: 300;
+}
+
+.typo-size {
+
+}

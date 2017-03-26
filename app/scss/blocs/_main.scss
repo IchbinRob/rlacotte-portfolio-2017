@@ -6,20 +6,30 @@
   }
 }
 
-.main__about,
-.main__skills,
-.main__exp,
-.main__portfolio {
+[class^="main__"] {
   background-color: _palette(bcg-white);
   display: none;
   left: 0;
+  padding: 20px;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: -1;
+  overflow-y: scroll;
 
   &.is-active {
     z-index: 1;
 
   }
+}
+
+.main__portfolioDesign > img {
+  width: 100%;
+  // .twentytwenty-wrapper {
+  //   height: 100%;
+  //
+  //   > .twentytwenty-container {
+  //     height: 100% !important;
+  //   }
+  // }
 }

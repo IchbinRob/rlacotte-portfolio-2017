@@ -6,7 +6,11 @@
 <font id="icons" horiz-adv-x="1000" >
 <font-face font-family="icons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
 <missing-glyph horiz-adv-x="1000" />
-<glyph glyph-name="cancel-circled2" unicode="&#xe800;" d="M612 248l-81-82q-6-5-13-5t-13 5l-76 77-77-77q-5-5-13-5t-12 5l-82 82q-6 6-6 13t6 13l76 76-76 77q-6 5-6 12t6 13l82 82q5 5 12 5t13-5l77-77 76 77q6 5 13 5t13-5l81-82q6-5 6-13t-6-12l-76-77 76-76q6-6 6-13t-6-13z m120 102q0 83-41 152t-110 111-152 41-153-41-110-111-41-152 41-152 110-111 153-41 152 41 110 111 41 152z m125 0q0-117-57-215t-156-156-215-58-216 58-155 156-58 215 58 215 155 156 216 58 215-58 156-156 57-215z" horiz-adv-x="857.1" />
+<glyph glyph-name="adjust" unicode="&#xe802;" d="M0 350q0 207 147 354t353 146 354-146 146-354-146-354-354-146-353 146-147 354z m147 0q0-146 103-250t250-104l0 708q-146 0-250-104t-103-250z" horiz-adv-x="1000" />
+
+<glyph glyph-name="cancel" unicode="&#xe804;" d="M654 349l346-346-154-154-346 346-346-346-154 154 346 346-346 346 154 154 346-346 346 346 154-154z" horiz-adv-x="1000" />
+
+<glyph glyph-name="fontsize" unicode="&#xf088;" d="M0 49l227 602h146l208-552 123 326h91l142-376h-96l-26 76h-135l-27-76h-207l-42 121h-214l-43-121h-147z m222 231h149l-74 216z m478-87h94l-47 136z" horiz-adv-x="937.5" />
 </font>
 </defs>
 </svg>

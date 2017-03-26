@@ -23,3 +23,18 @@
 @function _palette($keys...) {
   @return val($palette, $keys...);
 }
+
+@keyframes backgroundBlur {
+
+  0% {
+    background-position: 99% 0%;
+   }
+
+  50% {
+    background-position: 2% 100%;
+   }
+
+  100% {
+    background-position: 99% 0%;
+   }
+}
