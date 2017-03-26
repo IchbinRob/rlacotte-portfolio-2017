@@ -18,20 +18,19 @@
     <meta property="og:url" content="https://rlacotte.mmi-angouleme.fr/" />
     <meta property="og:site_name" content="Portfolio de Robinson Lacotte" />
     <!-- /SEO -->
-
 </head>
 <body>
   <div class="wrapper">
     <section class="header" id="header">
       <div class="header__logo">
         <svg class="menu__desktop" version="1.1"  xml:space="preserve" preserveaspectratio="none" viewbox="0 0 1732.3 848.3" enable-background="new 0 0 1732.3 848.3">
-          <defs>
+          <!-- <defs>
               <filter id="dropshadow">
                 <feoffset result="offOut" in="SourceAlpha" dx="0" dy="2"></feoffset>
                 <fegaussianblur result="blurOut" in="offOut" stddeviation="1"></fegaussianblur>
                 <feblend in="SourceGraphic" in2="blurOut" mode="normal"></feblend>
               </filter>
-            </defs>
+            </defs> -->
           <a xlink:href="#">
             <g>
               <polygon points="0 0 943.1 0 488.3 392.1 0 392" data-origin="0 0 943.1 0 488.3 392.1 0 392" data-section="about"/>
@@ -75,18 +74,18 @@
         <ul>
           <li data-section="about">
             <a href="#">
-              <p class="typo-serif-regular">Robinson Lacotte</p>
-              <p class="typo-serif-bold">Développeur</p>
-              <p class="typo-sans-light">Qui suis-je ?</p>
+              <p class="typo-serif-regular typo-title">Robinson Lacotte</p>
+              <p class="typo-serif-bold typo-main">Développeur &amp Designer</p>
+              <p class="typo-sans-light typo-link">Qui suis-je ?</p>
             </a>
           </li>
           <li data-section="skills"><a href="#">Skills</a></li>
           <li data-section="access">
             <div>
-              <a href="#"><i class="icon-fontsize"></i></a>
-              <a href="#"><i class="icon-adjust"></i></a>
-              <a href="#">FR</a>
-              <a href="#">Dys</a>
+              <a href="http://www.wikihow.com/Change-the-Font-Size-in-a-Browser" target="_blank"><i class="icon-fontsize"></i></a>
+              <a href="#adjust" id="contrast"><i class="icon-adjust"></i></a>
+              <a href="#EN">FR</a>
+              <a href="#Dys">Dys</a>
               <div class="dividers">
                 <svg class="divider">
                   <path d="M0 0 L50 50"></path>
@@ -108,22 +107,31 @@
         </ul>
       </div>
       <ul class="menu__mobile">
-        <li data-section="about"><a href="#">About</a></li>
-        <li data-section="skills"><a href="#">Skills</a></li>
-        <li data-section="exp"><a href="#">Experiences</a></li>
-        <li data-section="portfolio-dev"><a href="#">Programmation</a></li>
-        <li data-section="portfolio-design"><a href="#">Design</a></li>
-        <li data-section="hobby"><a href="#">Hobbies</a></li>
-        <li data-section="contact"><a href="#">Contact</a></li>
-        <li data-section="access"><a href="#">Accessibilité</a></li>
+        <li data-section="about"><a href="#" class="typo-serif-bold typo-main-mobile">About</a></li>
+        <li data-section="skills"><a href="#" class="typo-serif-bold typo-main-mobile">Skills</a></li>
+        <li data-section="exp"><a href="#" class="typo-serif-bold typo-main-mobile">Experiences</a></li>
+        <li data-section="portfolio-dev"><a href="#" class="typo-serif-bold typo-main-mobile">Programmation</a></li>
+        <li data-section="portfolio-design"><a href="#" class="typo-serif-bold typo-main-mobile">Design</a></li>
+        <li data-section="hobby"><a href="#" class="typo-serif-bold typo-main-mobile">Hobbies</a></li>
+        <li data-section="contact"><a href="#" class="typo-serif-bold typo-main-mobile">Contact</a></li>
+        <li data-section="access"><a href="#" class="typo-serif-bold typo-main-mobile">Accessibilité</a></li>
       </ul>
     </section>
     <section class="main" id="main">
-
       <div class="main__about" id="about">
-        <h1><strong>Robinson Lacotte</strong></h1>
-        <h2>Etudiant</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <!-- <div class="header-wrapper">
+            <h1>The Experimental Layout Lab</h1><h1>of Jen Simmons</h1>
+            <div class="demo-list">
+              <p>Includes examples for</p>
+                <ul>
+                  <li><a href="http://jensimmons.com/presentation/real-art-direction-web">Revolutionize Your Page: Real Art Direction on the Web</a></li>
+                  <li><a href="http://jensimmons.com/presentation/progressing-our-layouts">Progressing Our Layouts</a></li>
+                  <li><a href="http://jensimmons.com/presentation/modern-layouts-getting-out-our-ruts">Modern Layouts: Getting Out of Our Ruts</a></li>
+                </ul>
+            </div>
+            <p class="follow-links">Follow <a href="http://twitter.com/jensimmons">@jensimmons</a> on Twitter for more as it happens.<br>Sign up for <a href="http://layout.land">Layout Land</a>, a place for us to show off new ideas for layout.</p>
+            <p class="workshop-link"><a href="/workshop">Workshop Examples</a></p>
+          </div> -->
       </div>
 
       <div class="main__skills" id="skills">
@@ -169,8 +177,7 @@
       <div class="footer__main">
         <h3 class="footer__legal">© 1997-2042 Robinson Lacotte. All Rights Reserved.<span>|</span></h3>
         <h3 class="footer__mentions"><a href="#">Mentions légales</a><span>|</span></h3>
-        <h3 class="footer__contact"><a href="#">Contact</a><span>|</span></h3>
-        <h3 class="footer__access"><a href="#">Accessibilité</a><span></span></h3>
+        <h3 class="footer__contact"><a href="#">Contact</a></h3>
       </div>
     </section>
   </div>

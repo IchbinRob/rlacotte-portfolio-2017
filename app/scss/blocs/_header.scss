@@ -11,15 +11,15 @@
     }
 
     li a {
-      z-index: 50;
+      z-index: 999;
     }
 
     ul:first-child {
       li:nth-child(1) a {
-        left: 8vw;
+        left: 5vw;
         position: absolute;
         text-align: center;
-        top: 12vh;
+        top: 10vh;
       }
 
       li:nth-child(2) a {
@@ -29,9 +29,6 @@
       }
 
       li:nth-child(3) > div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: 1.2rem;
         height: 100px;
         left: 82vw;
@@ -44,19 +41,30 @@
         }
 
         > a:first-child {
+          width: 100%;
+          height: 25px;
+          text-align: center;
           top: 0;
         }
 
         > a:nth-child(2) {
+          height: 10px;
+          top: 50%;
           right: 0;
+          margin-top: -10px;
         }
 
         > a:nth-child(3) {
+          height: 10px;
+          margin-top: -10px;
+          top: 50%;
           left: 0;
           font-size: 1rem;
         }
 
         > a:nth-child(4) {
+          width: 100%;
+          text-align: center;
           bottom: 0;
           font-size: 1rem;
         }
@@ -111,7 +119,7 @@
       z-index: 150;
 
       > path {
-        stroke: black;
+        stroke: _palette(font-black);
       }
     }
 
@@ -119,7 +127,7 @@
 
   .menu__desktop {
     display: none;
-    filter: url(#dropshadow);
+    //filter: url(#dropshadow);
     z-index: 40;
 
     polygon {
@@ -134,6 +142,9 @@
     justify-content: space-around;
 
     li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-color: _palette(bcg-white);
       height: 100%;
       margin: 10px 0;

@@ -12,7 +12,7 @@
   flex-direction: column;
   line-height: 4vh;
 
-  @media (min-width: 835px) {
+  @media #{$bp-main} {
     flex-direction: row;
     padding: 20px 0;
     line-height: normal;
@@ -33,6 +33,18 @@
   }
 }
 
+.contrast-block {
+  fill: _palette(font-black) !important;
+  background-color: _palette(font-black);
+}
+
+.contrast-inline {
+  color: _palette(bcg-white);
+}
+
+.contrast-menu {
+  stroke: _palette(bcg-white) !important;
+}
 // .footer__legal {
 //
 // }

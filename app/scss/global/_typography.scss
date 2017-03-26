@@ -1,6 +1,14 @@
 $serif: 'Eczar', serif;
 $sans-serif: 'Work Sans', sans-serif;
 
+h1,
+h2,
+h3,
+a,
+p {
+  color: _palette(font-black);
+}
+
 .menu__desktopTitle li {
   font-family: $serif;
   font-weight: 700;
@@ -26,6 +34,34 @@ $sans-serif: 'Work Sans', sans-serif;
   font-weight: 300;
 }
 
-.typo-size {
+.typo-title {
+  font-size: 1.3vw;
+  line-height: calc(2.5rem + 1vh);
+}
 
+.typo-main {
+  line-height: calc(2.5rem + 1vh);
+}
+
+.typo-main-mobile {
+  font-size: 2rem;
+}
+
+.typo-link {
+  font-size: 1.6vw;
+  line-height: calc(3rem + 1vh);
+}
+
+.typo-link::after {
+  content:"";
+  background-color: _palette(font-black);
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  height: 1px;
+  width: 30%;
+}
+
+.typo-link.contrast-block::after {
+  background-color: _palette(bcg-white);
 }
