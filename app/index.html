@@ -103,7 +103,7 @@
           <li data-section="hobby"><a href="#">Hobbies</a></li>
           <li data-section="portfolio-dev"><a href="#">Programmation</a></li>
           <li data-section="exp"><a href="#">Experiences</a></li>
-          <li data-section="portfolio-design"><a href="#">Design</a></li>
+          <li data-section="portfolio-design"><a href="#" class="typo-main typo-serif-bold"><p>Photographie</p><p>&amp</p><p>Illustration</p></a></li>
         </ul>
       </div>
       <ul class="menu__mobile">
@@ -119,19 +119,6 @@
     </section>
     <section class="main" id="main">
       <div class="main__about" id="about">
-        <!-- <div class="header-wrapper">
-            <h1>The Experimental Layout Lab</h1><h1>of Jen Simmons</h1>
-            <div class="demo-list">
-              <p>Includes examples for</p>
-                <ul>
-                  <li><a href="http://jensimmons.com/presentation/real-art-direction-web">Revolutionize Your Page: Real Art Direction on the Web</a></li>
-                  <li><a href="http://jensimmons.com/presentation/progressing-our-layouts">Progressing Our Layouts</a></li>
-                  <li><a href="http://jensimmons.com/presentation/modern-layouts-getting-out-our-ruts">Modern Layouts: Getting Out of Our Ruts</a></li>
-                </ul>
-            </div>
-            <p class="follow-links">Follow <a href="http://twitter.com/jensimmons">@jensimmons</a> on Twitter for more as it happens.<br>Sign up for <a href="http://layout.land">Layout Land</a>, a place for us to show off new ideas for layout.</p>
-            <p class="workshop-link"><a href="/workshop">Workshop Examples</a></p>
-          </div> -->
       </div>
 
       <div class="main__skills" id="skills">
@@ -153,17 +140,39 @@
       </div>
 
       <div class="main__portfolioDesign" id="portfolio-design">
-        <p>Photographie & design</p>
-        <p>Etudiant</p>
-        <!-- <img src="img/de.jpg" alt="de">
-        <div class="twentytwenty-container compare">
-              <img src="img/LightBefore.jpg" alt="Cosplay Lightning Return Original" class="twentytwenty-before">
-              <img src="img/LightAfter.jpg" alt="Cosplay Lightning Return Retouch" class="twentytwenty-after">
+        <p class="typo-serif-bold typo-main">Photographie & Illustration</p>
+        <div class="design__content">
+          <article class="photo">
+              <img data-inview-src="img/de.jpg" alt="de" class="clip-photo"/>
+              <svg height="0" width="0">
+                  <defs>
+                      <clipPath id="photoPath">
+                          <path d="M51.5,52.5 602.5,52.5 377.5,416.5z" data-over-path="M31.5,47.5 643,47.5 393.3,451.5z"/>
+                      </clipPath>
+                  </defs>
+              </svg>
+          </article>
+        <article class="illustration">
+            <img data-inview-src="img/K20_8137.jpg" alt="Cosplay Vanille Retouch" class="clip-illu">
+            <svg height="0" width="0">
+                <defs>
+                    <clipPath id="illuPath">
+                        <path d="M66.7,516.4 321.3,55.3 594.7,500z" data-over-path="M52.3,530.3 334.9,18.6 638.3,500z"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </article>
+        <!-- <article class="vrac">
+            <img data-inview-src="img/LightAfter.jpg" alt="Cosplay Lightning Return Retouch" class="clip-vrac">
+            <svg height="0" width="0">
+                <defs>
+                    <clipPath id="vracPath">
+                        <path d="M51.5,52.5 602.5,52.5 377.5,416.5z" data-over-path="M31.5,47.5 643,47.5 393.3,451.5z"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </article> -->
         </div>
-        <div class="twentytwenty-container compare">
-              <img src="img/Light2Before.jpg" alt="Cosplay Lightning Return Original 2" class="twentytwenty-before">
-              <img src="img/Light2After.jpg" alt="Cosplay Lightning Return Retouch 2" class="twentytwenty-after">
-        </div> -->
       </div>
 
       <div class="main__hobby" id="hobby">
@@ -185,6 +194,6 @@
 			  src="https://code.jquery.com/jquery-3.1.1.min.js"
 			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 			  crossorigin="anonymous"></script>
-  <script src="js/all.js" charset="utf-8"></script>
+  <script src="js/all.js" charset="utf-8" async></script>
 </body>
 </html>

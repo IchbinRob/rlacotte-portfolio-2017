@@ -89,24 +89,46 @@
         left: .5vw;
         position: absolute;
         top: 50vh;
+
+        @media (max-height: 600px){
+          top: 300px;
+        }
       }
 
       li:nth-child(2) a {
         left: 15vw;
         position: absolute;
         top: 69vh;
+
+        @media (max-height: 600px){
+          top: 375px;
+        }
       }
 
       li:nth-child(3) a {
         left: 45vw;
         position: absolute;
         top: 55vh;
+
+        @media (max-height: 600px){
+          top: 325px;
+        }
       }
 
       li:nth-child(4) a {
         left: 74vw;
         position: absolute;
-        top: 70vh;
+        top: 60vh;
+        display: block;
+        text-align: center;
+
+        @media (max-height: 600px){
+          top: 350px;
+        }
+
+        @media (min-height: 900px){
+          top: 68vh;
+        }
       }
     }
 

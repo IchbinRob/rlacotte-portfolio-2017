@@ -15,7 +15,6 @@
   top: 0;
   width: 100%;
   z-index: -1;
-  overflow-y: scroll;
 
   &.is-active {
     z-index: 1;
@@ -23,13 +22,39 @@
   }
 }
 
-.main__portfolioDesign > img {
-  width: 100%;
-  // .twentytwenty-wrapper {
-  //   height: 100%;
-  //
-  //   > .twentytwenty-container {
-  //     height: 100% !important;
-  //   }
-  // }
+.main__portfolioDesign {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.design__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  > article {
+    width: auto;
+
+    > img {
+      position: absolute;
+      width: 700px;
+
+      &.clip-photo {
+        top: 0;
+        left: 0vw;
+        clip-path: url(#photoPath);
+      }
+
+      &.clip-illu {
+        bottom: 15vh;
+        right: 7vh;
+        clip-path: url(#illuPath);
+      }
+
+      &.clip-vrac {
+        clip-path: url(#vracPath);
+      }
+
+    }
+  }
 }
