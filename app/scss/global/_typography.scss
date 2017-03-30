@@ -34,6 +34,11 @@ p {
   font-weight: 300;
 }
 
+.typo-sans-regular {
+  font-family: $sans-serif;
+  font-weight: 400;
+}
+
 .typo-title {
   font-size: 1.3vw;
   line-height: calc(2.5rem + 1vh);
@@ -64,4 +69,8 @@ p {
 
 .typo-link.contrast-link::after {
   background-color: _palette(bcg-white);
+}
+
+h1.typo-main {
+  font-size: 3rem;
 }

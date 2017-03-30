@@ -4,12 +4,12 @@
       main = $('#main'),
       header = $('#header'),
       mobile = $('.menu__mobile li'),
-      activ = false,
-      contrastActiv = 0,
       el = 0;
       coord = [];
+
   $('.close').hide();
   main.hide();
+
   svg.click(function(){
     if ($(this).data('section') !== 'access' && $(this).data('section') !== "") {
       var headerHeight = header.height();
@@ -41,6 +41,10 @@
              front.attr("xlink:href", "#is-active");
            });
       LazyLoad.load('inview', '#'+sectionActiv);
+      if (sectionActiv == "portfolio-design") {
+        var src = $('#scriptdesign').data('src');
+        $('#scriptdesign').attr('src', src);
+      }
     }
     });
 
@@ -91,60 +95,10 @@
   });
 
 
-  $('#contrast').click(function(){
-    if (contrastActiv === 0) {
-      $('polygon, .menu__mobile li, [class^="main__"], .footer').addClass('contrast-block');
-      $('.typo-link').addClass('contrast-link');
-      $('h1, h2, h3, a, p').addClass('contrast-inline');
-      $('.divider > path').addClass('contrast-menu');
-      contrastActiv = 1;
-    } else {
-      $('polygon, .menu__mobile li, [class^="main__"], .footer, h1, h2, h3, a, p').removeClass('contrast-block');
-      $('.typo-link').removeClass('contrast-link');
-      $('h1, h2, h3, a, p').removeClass('contrast-inline');
-      $('.divider > path').removeClass('contrast-menu');
-      contrastActiv = 0;
-    }
-
-  });
-
-function animateOver(){
-  dynamics.animate(clip, {
-    d: pathOver,
-  }, {
-    type: dynamics.spring,
-    complete: animateOut
-  });
-}
-
-function animateOut(){
-  dynamics.animate(clip, {
-    d: pathOut ,
-  }, {
-    type: dynamics.easeInOut,
-    friction: 50,
-  });
-}
-
-// var clip = $('#photoPath > path');
-
-
-  $('.clip-illu').mouseenter(function(){
-    $('#illuPath path').trigger("click");
-  });
-
-  $('.clip-photo').mouseenter(function(){
-    $('#photoPath path').trigger("click");
-  });
-
-  $('.clip-vrac').mouseenter(function(){
-    $('#vracPath path').trigger("click");
-  });
-
-  $('path').click(function(){
-    pathOver = $(this).data('over-path');
-    pathOut = $(this).attr('d');
-      clip = this;
-      animateOver();
+  $('#toHobbies').click(function(){
+    var item = $('polygon[data-section="hobby"]');
+    var close = $('.close').trigger('click');
+    item.delay(1500).trigger('click');
+    console.log(close);
   });
 });

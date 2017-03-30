@@ -38,6 +38,22 @@ gulp.task('scripts', function() {
     .pipe(sync.stream());
 });
 
+gulp.task('specjs', function() {
+  return gulp.src('app/specjs/**/*.js')
+    .pipe(concat('design.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js/'))
+    .pipe(sync.stream());
+});
+
+gulp.task('scripts', function() {
+  return gulp.src('app/js/**/*.js')
+    .pipe(concat('all.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js/'))
+    .pipe(sync.stream());
+});
+
 
 gulp.task('imagemin', function(){
     return gulp.src('app/img/*')
@@ -53,7 +69,7 @@ gulp.task('css', function () {
         // .pipe(uncss({
         //               html: ['dist/index.html']
         //             }))
-        .pipe(cleanCSS())
+        // .pipe(cleanCSS())
         .pipe( sourcemaps.write('.') )
         .pipe( gulp.dest('dist/css/') )
         .pipe(sync.stream());
@@ -67,7 +83,7 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task('sync', ['html', 'scripts', 'img', 'imagemin', 'css', 'font', 'watch'], function() {
+gulp.task('sync', ['html', 'scripts', 'specjs', 'img', 'imagemin', 'css', 'font', 'watch'], function() {
     sync.init({
         server: __dirname + '/dist'
     });

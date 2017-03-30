@@ -22,39 +22,6 @@
   }
 }
 
-.main__portfolioDesign {
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
+@import 'main/about';
 
-.design__content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  > article {
-    width: auto;
-
-    > img {
-      position: absolute;
-      width: 700px;
-
-      &.clip-photo {
-        top: 0;
-        left: 0vw;
-        clip-path: url(#photoPath);
-      }
-
-      &.clip-illu {
-        bottom: 15vh;
-        right: 7vh;
-        clip-path: url(#illuPath);
-      }
-
-      &.clip-vrac {
-        clip-path: url(#vracPath);
-      }
-
-    }
-  }
-}
+@import 'main/design';

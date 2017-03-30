@@ -24,47 +24,24 @@
     <section class="header" id="header">
       <div class="header__logo">
         <svg class="menu__desktop" version="1.1"  xml:space="preserve" preserveaspectratio="none" viewbox="0 0 1732.3 848.3" enable-background="new 0 0 1732.3 848.3">
-          <!-- <defs>
-              <filter id="dropshadow">
-                <feoffset result="offOut" in="SourceAlpha" dx="0" dy="2"></feoffset>
-                <fegaussianblur result="blurOut" in="offOut" stddeviation="1"></fegaussianblur>
-                <feblend in="SourceGraphic" in2="blurOut" mode="normal"></feblend>
-              </filter>
-            </defs> -->
           <a xlink:href="#">
-            <g>
               <polygon points="0 0 943.1 0 488.3 392.1 0 392" data-origin="0 0 943.1 0 488.3 392.1 0 392" data-section="about"/>
-            </g>
           </a>
           <a xlink:href="#">
-            <g>
               <polygon points="0 419 457 419 225 618 0 811" data-origin="0 419 457 419 225 618 0 811" data-section="hobby"/>
-            </g>
           </a>
           <a xlink:href="#">
-            <g>
               <polygon points="498.8 417.7 657.5 649.4 793.6 848.3 0 848.3" data-origin="498.8 417.7 657.5 649.4 793.6 848.3 0 848.3" data-section="portfolio-dev"/>
-            </g>
           </a>
           <a xlink:href="#">
-            <g>
               <polygon points="982.1 0 1268.8 0 1516.2 391.9 528.5 392.1" data-origin="982.1 0 1268.8 0 1516.2 391.9 528.5 392.1" data-section="skills"/>
-            </g>
           </a>
-          <!-- <a xlink:href="#"> -->
-            <g>
               <polygon points="1301.5 0 1732.3 0 1732.3 687 1503.4 321.2 " data-origin="1301.5 0 1732.3 0 1732.3 687 1503.4 321.2 " data-section="access"/>
-            </g>
-          <!-- </a> -->
           <a xlink:href="#">
-            <g>
               <polygon points="1531.6 417.5 1732.3 736.3 1732.3 848.3 867.3 848.3 " data-origin="1531.6 417.5 1732.3 736.3 1732.3 848.3 867.3 848.3 " data-section="portfolio-design"/>
-            </g>
           </a>
           <a xlink:href="#">
-            <g>
               <polygon points="531.4 418.2 1481.8 418.1 1162.6 624.8 823 848.3" data-origin="531.4 418.2 1481.8 418.1 1162.6 624.8 823 848.3" data-section="exp"/>
-            </g>
           </a>
           <use id="front" xlink:href="#"></use>
         </svg>
@@ -81,8 +58,8 @@
           </li>
           <li data-section="skills"><a href="#">Skills</a></li>
           <li data-section="access">
-            <div>
-              <a href="http://www.wikihow.com/Change-the-Font-Size-in-a-Browser" target="_blank"><i class="icon-fontsize"></i></a>
+            <div id="accessMenu">
+              <a href="#" id="fontsize"><i class="icon-fontsize"></i></a>
               <a href="#adjust" id="contrast"><i class="icon-adjust"></i></a>
               <a href="#EN">FR</a>
               <a href="#Dys">Dys</a>
@@ -119,6 +96,8 @@
     </section>
     <section class="main" id="main">
       <div class="main__about" id="about">
+        <img data-inview-src="img/moi.jpg" alt="la tête de Robinson">
+        <button type="button" name="button" id="toHobbies">Hobbies</button>
       </div>
 
       <div class="main__skills" id="skills">
@@ -140,38 +119,20 @@
       </div>
 
       <div class="main__portfolioDesign" id="portfolio-design">
-        <p class="typo-serif-bold typo-main">Photographie & Illustration</p>
+        <h1 class="typo-serif-bold typo-main">Photographie & Illustration</h1>
         <div class="design__content">
-          <article class="photo">
-              <img data-inview-src="img/de.jpg" alt="de" class="clip-photo"/>
-              <svg height="0" width="0">
-                  <defs>
-                      <clipPath id="photoPath">
-                          <path d="M51.5,52.5 602.5,52.5 377.5,416.5z" data-over-path="M31.5,47.5 643,47.5 393.3,451.5z"/>
-                      </clipPath>
-                  </defs>
-              </svg>
-          </article>
-        <article class="illustration">
-            <img data-inview-src="img/K20_8137.jpg" alt="Cosplay Vanille Retouch" class="clip-illu">
-            <svg height="0" width="0">
-                <defs>
-                    <clipPath id="illuPath">
-                        <path d="M66.7,516.4 321.3,55.3 594.7,500z" data-over-path="M52.3,530.3 334.9,18.6 638.3,500z"/>
-                    </clipPath>
-                </defs>
-            </svg>
-        </article>
-        <!-- <article class="vrac">
-            <img data-inview-src="img/LightAfter.jpg" alt="Cosplay Lightning Return Retouch" class="clip-vrac">
-            <svg height="0" width="0">
-                <defs>
-                    <clipPath id="vracPath">
-                        <path d="M51.5,52.5 602.5,52.5 377.5,416.5z" data-over-path="M31.5,47.5 643,47.5 393.3,451.5z"/>
-                    </clipPath>
-                </defs>
-            </svg>
-        </article> -->
+          <a class="photo" href="#">
+            <p class="typo-sans-regular typo-link">Photographie</p>
+            <img id="photoPath" data-inview-src="img/de.jpg" alt="de" class="clip-photo"/>
+          </a>
+        <a class="illustration" href="#">
+            <p class="typo-sans-regular typo-link">Illustration</p>
+            <img id="illuPath" data-inview-src="img/ROB.jpg" alt="Cosplay Vanille Retouch" class="clip-illu">
+        </a>
+        <a class="vrac" href="#">
+            <p class="typo-sans-regular typo-link">Vrac</p>
+            <img id="vracPath" data-inview-src="img/K20_8137.jpg" alt="Cosplay Lightning Return Retouch" class="clip-vrac">
+        </a>
         </div>
       </div>
 
@@ -186,7 +147,8 @@
       <div class="footer__main">
         <h3 class="footer__legal">© 1997-2042 Robinson Lacotte. All Rights Reserved.<span>|</span></h3>
         <h3 class="footer__mentions"><a href="#">Mentions légales</a><span>|</span></h3>
-        <h3 class="footer__contact"><a href="#">Contact</a></h3>
+        <h3 class="footer__contact"><a href="#">Contact</a><span>|</span></h3>
+        <h3 class="footer__issues"><a href="http://www.wikihow.com/Update-Your-Browser" target="_blank">Problèmes d'affichage ?</a></h3>
       </div>
     </section>
   </div>
@@ -195,5 +157,6 @@
 			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 			  crossorigin="anonymous"></script>
   <script src="js/all.js" charset="utf-8" async></script>
+  <script id="scriptdesign" data-src="js/design.js" charset="utf-8"></script>
 </body>
 </html>
