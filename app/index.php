@@ -1,3 +1,44 @@
+<?php
+session_start();
+function autoSelectLanguage($aLanguages, $sDefault = 'fr_FR') {
+  if(!empty($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
+	 $aBrowserLanguages = explode(',',$_SERVER['HTTP_ACCEPT_LANGUAGE']);
+	 foreach($aBrowserLanguages as $sBrowserLanguage) {
+		$sLang = strtolower(substr($sBrowserLanguage,0,2));
+
+		if(in_array($sLang, $aLanguages)) {
+		  switch ($sLang) {
+		  	case 'fr':
+		  		$sLang = 'fr_FR';
+		  		break;
+		  	case 'en':
+		  		$sLang = 'en_EN';
+		  		break;
+		  	default:
+		  		$sLang = 'fr_FR';
+		  		break;
+		  }
+		  return $sLang;
+		}
+	 }
+  }
+  return $sDefault;
+}
+
+// executer qu'une seule fois le changement de la langue
+if( empty($_SESSION['lang']) ){
+    $_SESSION['lang'] = autoSelectLanguage(array('fr','en'), 'fr');
+}
+// Set language
+putenv('LC_ALL=' . $_SESSION['lang'] );
+setlocale(LC_ALL, $_SESSION['lang'] . '.utf8' );
+// Specify the location of the translation tables
+bindtextdomain('main', 'locale');
+bind_textdomain_codeset('main', 'UTF-8');
+// Choose domain
+textdomain('main');
+
+ ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,6 +47,7 @@
     <title>Robinson Lacotte | Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Eczar:400,700|Work+Sans:300,400,500,800" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link id="linkDys" rel="stylesheet" type="text/css" data-href="css/dys.css">
 
     <!-- SEO -->
     <meta name="description" content="Portfolio de Robinson Lacotte - Web développeur - Photographe - Etudiant MMI"/>
@@ -51,18 +93,18 @@
         <ul>
           <li data-section="about">
             <a href="#">
-              <p class="typo-serif-regular typo-title">Robinson Lacotte</p>
-              <p class="typo-serif-bold typo-main">Développeur &amp Designer</p>
+              <p class="typo-serif-regular typo-title">Robinson Lacotte <?php echo $sLang;echo $_SESSION['lang']; ?></p>
+              <p class="typo-serif-bold typo-main">Développeur &amp Designer </p>
               <p class="typo-sans-light typo-link">Qui suis-je ?</p>
             </a>
           </li>
-          <li data-section="skills"><a href="#">Skills</a></li>
+          <li data-section="skills"><a href="#"><?php echo _("Compétences"); ?></a></li>
           <li data-section="access">
             <div id="accessMenu">
               <a href="#" id="fontsize"><i class="icon-fontsize"></i></a>
               <a href="#adjust" id="contrast"><i class="icon-adjust"></i></a>
               <a href="#EN">FR</a>
-              <a href="#Dys">Dys</a>
+              <a href="#Dys" id="dys">Dys</a>
               <div class="dividers">
                 <svg class="divider">
                   <path d="M0 0 L50 50"></path>

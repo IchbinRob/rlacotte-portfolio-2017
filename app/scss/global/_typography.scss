@@ -40,12 +40,12 @@ p {
 }
 
 .typo-title {
-  font-size: 1.3vw;
-  line-height: calc(2.5rem + 1vh);
+  font-size: calc(.7vw + 1rem);
+  line-height: calc(5vh + .5rem);
 }
 
 .typo-main {
-  line-height: calc(2.5rem + 1vh);
+  line-height: calc(4vh + .5rem);
 }
 
 .typo-main-mobile {
@@ -53,17 +53,17 @@ p {
 }
 
 .typo-link {
-  font-size: 1.6vw;
-  line-height: calc(3rem + 1vh);
+  font-size: calc(.5vw + 1rem);
+  line-height: calc(7vh + .5rem);
 }
 
 .typo-link::after {
-  content:"";
   background-color: _palette(font-black);
-  position: absolute;
   bottom: 0;
-  left: 35%;
+  content: '';
   height: 1px;
+  left: 35%;
+  position: absolute;
   width: 30%;
 }
 
@@ -73,4 +73,9 @@ p {
 
 h1.typo-main {
   font-size: 3rem;
+}
+
+.fts-plus, .fts-moins {
+  border: 2px solid _palette(font-black);
+  border-radius: 50%;
 }

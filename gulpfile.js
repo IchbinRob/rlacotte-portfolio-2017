@@ -13,10 +13,17 @@ var gulp = require('gulp'),
     //gulp flex svg
 
 gulp.task('html', function() {
-    gulp.src('app/index.html')
+    gulp.src('app/index.php')
         .pipe(gulp.dest('dist'))
         .pipe(sync.stream());
 });
+
+gulp.task('locale', function() {
+    gulp.src('app/locale/**/*.mo')
+        .pipe(gulp.dest('dist/locale/'))
+        .pipe(sync.stream());
+});
+
 
 gulp.task('img', function(){
   gulp.src('app/img/*')
@@ -77,13 +84,14 @@ gulp.task('css', function () {
 
 gulp.task('watch', function() {
   gulp.watch(['./app/scss/**/*.scss'], ['css']);
-  gulp.watch(['./app/index.html'], ['html']);
+  gulp.watch(['./app/index.php'], ['html']);
+  gulp.watch(['./app/locale/**/*.mo'], ['locale']);
   gulp.watch(['./app/img/*'], ['img']);
   gulp.watch(['./app/js/**/*.js'], ['scripts']);
 });
 
 
-gulp.task('sync', ['html', 'scripts', 'specjs', 'img', 'imagemin', 'css', 'font', 'watch'], function() {
+gulp.task('sync', ['html', 'locale', 'scripts', 'specjs', 'img', 'imagemin', 'css', 'font', 'watch'], function() {
     sync.init({
         server: __dirname + '/dist'
     });
