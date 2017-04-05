@@ -1,6 +1,29 @@
-.main__about {
+.about__contentWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: scroll;
+  .about__contentDesc {
 
-  img {
-    flex-basis: 0;
+    .pp__img {
+      height: calc(65vh + 6vw);
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .about__desc {
+    text-align: justify;
+  }
+
+  @media #{$bp-main} {
+    flex-direction: column;
+    overflow-y: hidden;
+
+    .about__contentDesc {
+      display: flex;
+      align-items: center;
+    }
   }
 }

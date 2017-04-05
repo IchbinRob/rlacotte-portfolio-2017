@@ -1,0 +1,154 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-04-04 21:36+0200\n"
+"PO-Revision-Date: 2017-04-04 21:36+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_EN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: index.php\n"
+
+#: index.php:106
+#, fuzzy
+#| msgid "Développeur &amp Illustrateur"
+msgid "Développeur &amp; Illustrateur"
+msgstr "Developer &amp Designer"
+
+#: index.php:107
+msgid "Qui suis-je ?"
+msgstr "Who am I ?"
+
+#: index.php:110 index.php:143
+msgid "Compétences"
+msgstr "Skills"
+
+#: index.php:135
+msgid "Centres</p><p>d’intérêt"
+msgstr "Hobbies"
+
+#: index.php:136 index.php:145
+msgid "Programmation"
+msgstr "Programming"
+
+#: index.php:137 index.php:144
+msgid "Projets"
+msgstr ""
+
+#: index.php:138
+msgid "Photographie"
+msgstr "Photography"
+
+#: index.php:138
+msgid "Illustration"
+msgstr "Design"
+
+#: index.php:142
+msgid "À propos"
+msgstr "About"
+
+#: index.php:146 index.php:195
+#, fuzzy
+#| msgid "Photographie &amp Illustration"
+msgid "Photographie &amp; Illustration"
+msgstr "Photography &amp Design"
+
+#: index.php:147
+msgid "Centres d’intérêt"
+msgstr "Hobbies"
+
+#: index.php:148 index.php:224
+msgid "Contact"
+msgstr "Contact"
+
+#: index.php:149
+msgid "Accessibilité"
+msgstr ""
+
+#: index.php:161
+msgid "Développeur web et designer"
+msgstr "Développeur web and designer"
+
+#: index.php:162
+msgid ""
+"Je suis en deuxième année d’un DUT Métiers du Multimédia et de l’Internet à "
+"Angoulême. Je suis titulaire d’un baccalauréat scientifique option sciences "
+"de l’ingénieur."
+msgstr ""
+
+#: index.php:163
+msgid ""
+"Je m’intéresse de près aux nouvelles technologies, autant au hardware qu'au "
+"software."
+msgstr ""
+
+#: index.php:164
+msgid ""
+"Je suis curieux. J’ai encore beaucoup de choses à apprendre, et lorsque j’ai "
+"un projet à rendre, je ne me limite pas à ce que je connais. "
+"Particulièrement dans le web, qui est en perpétuelle évolution et qui voit "
+"naitre de nouvelles technologies tous les jours."
+msgstr ""
+
+#: index.php:165
+msgid ""
+"L’Open Source, la vie privée et la sécurité sur la toile sont des thèmes qui "
+"me tiennent à cœur."
+msgstr ""
+
+#: index.php:169
+msgid "Pour en savoir plus sur mes compétences"
+msgstr ""
+
+#: index.php:170
+msgid "Ou pour en savoir un peu plus sur moi"
+msgstr ""
+
+#: index.php:171
+msgid "Mes projets professionnels"
+msgstr ""
+
+#: index.php:172
+msgid "Mes créations"
+msgstr ""
+
+#: index.php:198
+msgid "Photographies"
+msgstr "Pictures"
+
+#: index.php:202
+msgid "Illustrations"
+msgstr "Design"
+
+#: index.php:206
+msgid "Créations diverses"
+msgstr ""
+
+#: index.php:222
+msgid "Tous droits réservés"
+msgstr "All rights reserved"
+
+#: index.php:223
+msgid "Mentions légales"
+msgstr ""
+
+#: index.php:225
+msgid "Problèmes d'affichage ?"
+msgstr ""
+
+#: index.php:229
+#, fuzzy
+#| msgid "Contact"
+msgid "Me contacter"
+msgstr "Contact"
+
+#~ msgid "Competences"
+#~ msgstr "Skills"
+
+#~ msgid "coucou"
+#~ msgstr "hi"

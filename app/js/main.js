@@ -3,9 +3,10 @@
       front = $('#front'),
       main = $('#main'),
       header = $('#header'),
-      mobile = $('.menu__mobile li'),
+      mobile = $('.menu__mobile li:not([data-section="access"],[data-section="contact"])'),
       el = 0;
       coord = [];
+      selecSectionActiv = '';
 
   $('.close').hide();
   main.hide();
@@ -40,8 +41,8 @@
              main.addClass('is-active');
              front.attr("xlink:href", "#is-active");
            });
-      LazyLoad.load('inview', '#'+sectionActiv);
-      if (sectionActiv == "portfolio-design") {
+      LazyLoad.load('simple', '#'+sectionActiv);
+      if (sectionActiv == "portfolio-design" || sectionActiv == 'about') {
         var src = $('#scriptdesign').data('src');
         $('#scriptdesign').attr('src', src);
       }
@@ -73,7 +74,7 @@
                $('.close').fadeIn(150);
                main.addClass('is-active');
              });
-        LazyLoad.load('inview', '#'+sectionActiv);
+        LazyLoad.load('simple', '#'+sectionActiv);
       });
   $('.close').click(function(){
     header.fadeIn(1);
@@ -94,11 +95,16 @@
       $( ".menu__desktopTitle li a, .menu__desktopTitle li div").delay(900).fadeIn(100);
   });
 
+  var KEYCODE_ESC = 27;
 
-  $('#toHobbies').click(function(){
-    var item = $('polygon[data-section="hobby"]');
-    var close = $('.close').trigger('click');
-    item.delay(1500).trigger('click');
-    console.log(close);
+  $(document).keyup(function(e) {
+    if (e.keyCode == KEYCODE_ESC) $('.close').trigger('click');
   });
+
+  // $('#toHobbies').click(function(){
+  //   var item = $('polygon[data-section="hobby"]');
+  //   var close = $('.close').trigger('click');
+  //   item.delay(1500).trigger('click');
+  //   console.log(close);
+  // });
 });

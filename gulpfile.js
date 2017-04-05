@@ -53,15 +53,6 @@ gulp.task('specjs', function() {
     .pipe(sync.stream());
 });
 
-gulp.task('scripts', function() {
-  return gulp.src('app/js/**/*.js')
-    .pipe(concat('all.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('dist/js/'))
-    .pipe(sync.stream());
-});
-
-
 gulp.task('imagemin', function(){
     return gulp.src('app/img/*')
         .pipe(imagemin())
@@ -76,7 +67,7 @@ gulp.task('css', function () {
         // .pipe(uncss({
         //               html: ['dist/index.html']
         //             }))
-        // .pipe(cleanCSS())
+        .pipe(cleanCSS())
         .pipe( sourcemaps.write('.') )
         .pipe( gulp.dest('dist/css/') )
         .pipe(sync.stream());

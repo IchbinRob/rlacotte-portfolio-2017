@@ -23,7 +23,7 @@
       }
 
       li:nth-child(2) a {
-        left: 58vw;
+        left: 55vw;
         position: absolute;
         top: 17vh;
       }
@@ -86,9 +86,11 @@
 
     ul:nth-child(2) {
       li:nth-child(1) a {
-        left: .5vw;
+        left: 3vw;
         position: absolute;
         top: 50vh;
+        display: block;
+        text-align: left;
 
         @media (max-height: 600px){
           top: 300px;

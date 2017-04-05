@@ -16,7 +16,7 @@ $(function(){
       fr.addClass('fts-plus');
       dys.html('-');
       dys.addClass('fts-moins');
-      $(this).css('color', 'grey');
+      $(this).css('opacity', '.6');
       ftsActiv = 1;
     } else {
       divider.attr('d','M0 100 L50 50');
@@ -24,7 +24,7 @@ $(function(){
       fr.removeClass('fts-plus');
       dys.html('Dys');
       dys.removeClass('fts-moins');
-      $(this).css('color', '');
+      $(this).css('opacity', '');
       ftsActiv = 0;
     }
 
@@ -76,6 +76,30 @@ $(function(){
         $('.wrapper *').css('font-family','');
         dysActiv = 0;
       }
+    }
+  });
+
+  $('#lang').click(function(e){
+    e.preventDefault();
+    if (!fr.hasClass('fts-plus')){
+     var newLang = $(this).html();
+     var oldLang = newLang;
+     console.log(newLang);
+     switch (newLang) {
+       case 'FR':
+         newLang = 'fr_FR';
+         langView = 'EN';
+         break;
+       case 'EN':
+          newLang = 'en_US';
+          langView = 'FR';
+        break;
+       default: newLang = "fr_FR";
+                langView = 'FR';
+     }
+    $(this).html(langView);
+     $('#theNewLang').attr('value', newLang);
+     $('#changeLang').submit();
     }
   });
 });
