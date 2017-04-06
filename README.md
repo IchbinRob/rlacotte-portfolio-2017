@@ -1,5 +1,8 @@
 # Portfolio de Robinson Lacotte
 
+## Notes de déboguage
+* Mon responsive n'est pas entièrement dynamique. La taille de certains éléments est calculé grâce à du JavaScript.
+--*
 ## Erreurs W3C
 1. Pour le HTML :
   * Pour des raisons d'optimisation lors du chargement de la page, des balises `<link>`, `<script>` et `<img>` ont des erreurs d'attribut. J'utilise des `data-` pour paralyser la balise. Le W3C me le signale comme des erreurs, mais c'est volontaire.

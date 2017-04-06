@@ -19,8 +19,15 @@ var vracPts = [[36, 0], [0, 100], [100, 80]];
        });
 
 var myPhoto = [[90, 0], [0, 25], [65, 100]];
-      $('#moiPath').clipPath(myPhoto, {
-        isPercentage: true,
-        svgDefId: 'pp'
-      });
+     $('#moiPath').clipPath(myPhoto, {
+       isPercentage: true,
+       svgDefId: 'pp'
+     });
+
+$('#portfolio-design').click(function(){
+  var sectionHeight = $('#portfolio-design').height();
+  console.log(sectionHeight);
+  $('[class^="portfolioDesign__"]').css('height', sectionHeight);
+});
+
 });

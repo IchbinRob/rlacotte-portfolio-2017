@@ -18,3 +18,11 @@
       }
   // }
 }
+
+// @mixin delay($items_number, $delay) {
+//   @for $i from 1 through $items_number {
+//     &:nth-child(#{$i}) {
+//       transition-delay: $delay * $i;
+//     }
+//   }
+// }

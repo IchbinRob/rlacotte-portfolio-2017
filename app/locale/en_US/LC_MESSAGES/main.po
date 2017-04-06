@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2017-04-04 21:36+0200\n"
-"PO-Revision-Date: 2017-04-04 21:36+0200\n"
+"POT-Creation-Date: 2017-04-05 23:09+0200\n"
+"PO-Revision-Date: 2017-04-06 03:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_EN\n"
@@ -15,16 +15,14 @@ msgstr ""
 "X-Poedit-SearchPath-0: index.php\n"
 
 #: index.php:106
-#, fuzzy
-#| msgid "Développeur &amp Illustrateur"
 msgid "Développeur &amp; Illustrateur"
-msgstr "Developer &amp Designer"
+msgstr "Developer &amp; Designer"
 
 #: index.php:107
 msgid "Qui suis-je ?"
 msgstr "Who am I ?"
 
-#: index.php:110 index.php:143
+#: index.php:110 index.php:143 index.php:177
 msgid "Compétences"
 msgstr "Skills"
 
@@ -52,17 +50,15 @@ msgstr "Design"
 msgid "À propos"
 msgstr "About"
 
-#: index.php:146 index.php:195
-#, fuzzy
-#| msgid "Photographie &amp Illustration"
+#: index.php:146
 msgid "Photographie &amp; Illustration"
-msgstr "Photography &amp Design"
+msgstr "Photography &amp; Design"
 
 #: index.php:147
 msgid "Centres d’intérêt"
 msgstr "Hobbies"
 
-#: index.php:148 index.php:224
+#: index.php:148 index.php:353
 msgid "Contact"
 msgstr "Contact"
 
@@ -117,35 +113,76 @@ msgstr ""
 msgid "Mes créations"
 msgstr ""
 
+#: index.php:180
+msgid "Développement Web"
+msgstr "Web Developer"
+
+#: index.php:184
+msgid "Infographie"
+msgstr "Infographic"
+
+#: index.php:188
+msgid "Communication"
+msgstr "Communication"
+
+#: index.php:189
+msgid "Gestion de projets"
+msgstr ""
+
+#: index.php:192
+msgid "Autre"
+msgstr ""
+
 #: index.php:198
+msgid "Expériences professionnels & personnelles"
+msgstr ""
+
+#: index.php:213
+msgid "img/toundra-fr.jpg"
+msgstr "img/toundra-en.jpg"
+
+#: index.php:215
+msgid "http://rlacotte.mmi-angouleme.fr/toundra/home/indexFR"
+msgstr "http://rlacotte.mmi-angouleme.fr/toundra/home/indexEN"
+
+#: index.php:237
+msgid "BIENTÔT"
+msgstr "SOON"
+
+#: index.php:252
+msgid "Photographies &amp; Illustrations"
+msgstr "Photography &amp; Design"
+
+#: index.php:255 index.php:268
 msgid "Photographies"
 msgstr "Pictures"
 
-#: index.php:202
+#: index.php:259 index.php:298
 msgid "Illustrations"
 msgstr "Design"
 
-#: index.php:206
+#: index.php:263 index.php:320
 msgid "Créations diverses"
 msgstr ""
 
-#: index.php:222
-msgid "Tous droits réservés"
-msgstr "All rights reserved"
-
-#: index.php:223
+#: index.php:352 index.php:372
 msgid "Mentions légales"
 msgstr ""
 
-#: index.php:225
-msgid "Problèmes d'affichage ?"
-msgstr ""
+#: index.php:354
+msgid "http://fr.wikihow.com/mettre-%C3%A0-jour-votre-navigateur"
+msgstr "http://www.wikihow.com/Update-Your-Browser"
 
-#: index.php:229
-#, fuzzy
-#| msgid "Contact"
+#: index.php:354
+msgid "Problèmes d'affichage ?"
+msgstr "Issues ?"
+
+#: index.php:358
 msgid "Me contacter"
 msgstr "Contact"
+
+#~ msgid "Tous droits réservés"
+#~ msgstr "All rights reserved"
 
 #~ msgid "Competences"
 #~ msgstr "Skills"

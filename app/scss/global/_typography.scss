@@ -39,6 +39,11 @@ p {
   font-weight: 400;
 }
 
+.typo-sans-bold {
+  font-family: $sans-serif;
+  font-weight: 500;
+}
+
 .typo-title {
   font-size: calc(.7vw + 1rem);
   line-height: calc(5vh + .5rem);
@@ -49,7 +54,7 @@ p {
 }
 
 .typo-main-mobile {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .typo-link {
@@ -72,5 +77,23 @@ p {
 }
 
 h1.typo-main {
-  font-size: 3rem;
+  font-size: 1.7rem;
+
+  @media #{$bp-main} {
+    font-size: 3rem;
+  }
+}
+
+.typo-justify {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.typo-underline {
+  border-bottom: 2px solid _palette('font-black');
+  transition: border-bottom .2s;
+
+  &:hover {
+    border-bottom: 10px solid _palette('font-black');
+  }
 }

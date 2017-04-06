@@ -1,0 +1,62 @@
+.main__exp, .main__hobby, .main__portfolioDev {
+  width: 100%;
+  flex-direction: column;
+  padding: 0 10px;
+  text-align: center;
+  overflow-y: auto;
+
+  > h1 {
+    padding: 10px 0;
+  }
+
+  > section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 34px;
+
+    @media #{$bp-main}{
+      flex-direction: row;
+    }
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+
+    figure {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+
+      img, iframe {
+        width: 100%;
+        margin: 10px 0;
+        transition: transform .3s;
+      }
+
+      img:hover, iframe:hover {
+        transform: scale(1.1);
+      }
+
+      iframe {
+        width: 100%;
+        padding: 0 10px;
+        @media #{bp-main} {
+          width: 25vw;
+          padding: inherit;
+        }
+      }
+    }
+  }
+
+  article:first-child {
+    > figure > p {
+        width: 100%;
+        padding: 0 10px;
+        @media #{bp-main} {
+          width: 25vw;
+          padding: inherit;
+        }
+    }
+  }
+}

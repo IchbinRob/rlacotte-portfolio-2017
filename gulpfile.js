@@ -79,6 +79,7 @@ gulp.task('watch', function() {
   gulp.watch(['./app/locale/**/*.mo'], ['locale']);
   gulp.watch(['./app/img/*'], ['img']);
   gulp.watch(['./app/js/**/*.js'], ['scripts']);
+  gulp.watch(['./app/specjs/**/*.js'], ['specjs']);
 });
 
 

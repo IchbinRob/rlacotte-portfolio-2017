@@ -46,6 +46,13 @@
         var src = $('#scriptdesign').data('src');
         $('#scriptdesign').attr('src', src);
       }
+      if (sectionActiv == "hobby") {
+        var srcbc ="";
+        $.each($('.bc-iframe'), function(){
+          srcbc = $(this).data('src');
+          $(this).attr('src', srcbc);
+        });
+      }
     }
     });
 
@@ -75,7 +82,15 @@
                main.addClass('is-active');
              });
         LazyLoad.load('simple', '#'+sectionActiv);
+        if (sectionActiv == "hobby") {
+          var srcbc ="";
+          $.each($('.bc-iframe'), function(){
+            srcbc = $(this).data('src');
+            $(this).attr('src', srcbc);
+          });
+        }
       });
+
   $('.close').click(function(){
     header.fadeIn(1);
     main.removeClass("is-active");
@@ -101,10 +116,25 @@
     if (e.keyCode == KEYCODE_ESC) $('.close').trigger('click');
   });
 
-  // $('#toHobbies').click(function(){
-  //   var item = $('polygon[data-section="hobby"]');
-  //   var close = $('.close').trigger('click');
-  //   item.delay(1500).trigger('click');
-  //   console.log(close);
-  // });
+var finanime = 0;
+    $('progress').mouseenter(function() {
+      if (finanime === 0) {
+        finanime = 1;
+        var to = $(this).attr('value');
+        $(this).attr('value', '0');
+        $(this).animate({
+          value : to,
+        }, 500, function(){
+          finanime = 0;
+        } );
+      }
+  });
+
+$('#langMob').click(function(){
+  $('#lang').trigger('click');
+});
+$('#dysMob').click(function(){
+  $('#dys').trigger('click');
+});
+
 });
