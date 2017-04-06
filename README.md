@@ -1,5 +1,7 @@
 # Portfolio de Robinson Lacotte
 
+Codé avec amour et aucun café.
+
 ## Notes de déboguage
 * Mon responsive n'est pas entièrement dynamique. La taille de certains éléments est calculé grâce à du JavaScript.
 --*
@@ -26,11 +28,18 @@
 
 Tout le code source est disponible à cette adresse : https://github.com/IchbinRob/rlacotte-portfolio-2017
 
+### Librairies utilisées
+* dynamics.js : Animation du SVG
+* Jquery : la fausse bonne idée
+* waypoint-lazyLoad.js : pour gérer le chargement des images.
+* clip-path.js : permet de créer un masque SVG (la méthode native CSS n'est compatible qu'avec chrome)
+* That's all !
+  --*
 ### Le *Workflow*
 * J'ai utilisé le préprocesseur SCSS.
 * La compilation du css, le préfixage, et la minification du CSS est automatisé grâce à Gulp.
 * Le JavaScript est lui aussi, concaténé et minifié automatiquement.
-
+  --*
 ### Le *backoffice*
 Il **n**'y a **pas** de *backoffice* présent. Pourquoi ?
   * Car son utilisation est loin d'être indispensable sur un Portfolio,
@@ -40,7 +49,7 @@ Il **n**'y a **pas** de *backoffice* présent. Pourquoi ?
 ### La traduction
 Je me suis basé sur une traduction avec la méthode gettext. Le fichier .po est disponible dans le code source.
 *le site n'est pas encore traduit dans sa totalité*
-
+  --*
 ### Objectif 0 chargement
 * J'ai pensé mon portfolio pour qu'il n'y ait aucun chargement. C'est donc un *One page*, tout en proposant une conception et une expérience radicalement différente.
 * Le seul chargement présent est lors du changement de la langue.
