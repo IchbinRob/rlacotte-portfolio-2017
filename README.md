@@ -12,6 +12,8 @@
     *  Element `script` must not have attribute `charset` unless attribute `src` is also specified.
   * J'ai aussi une erreur lié à l'utilisation des Googles fonts API, qui utilise des caractères non autorisé :
     * Bad value https://fonts.googleapis.com/css?family=Eczar:400,700|Work+Sans:300,400,500,800 for attribute `href` on element `link`: Illegal character in query: | is not allowed
+  * J'utilise un iframe pour Bandcamp qui génère beaucoup d'erreur.
+  * Ces erreurs, sont des faux positifs, car nécessaires au bon fonctionnementt de l'API et l'iframe.
   --*
 
 2. Pour le CSS :
