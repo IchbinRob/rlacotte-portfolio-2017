@@ -19,7 +19,7 @@
 2. Pour le CSS :
   * Le W3C ne gère pas les propriétés CSS pour styler les SVG : `fill`, `stroke`...
 
-  * J'ai de nombreux warning lié aux extensions propriétaires, et aussi une erreur. Mais j'assume ces erreurs car elles permettent une meilleure compatibilité avec des navigateurs plus anciens.
+  * J'ai de nombreux warning liés aux extensions propriétaires, et aussi une erreur. Mais j'assume ces erreurs car elles permettent une meilleure compatibilité avec des navigateurs plus anciens.
 --*
 
 ## Notes de conception
